@@ -1,4 +1,4 @@
-# Space Battleship Game 🚀
+# Space Battle 🚀
 
 ### A Fun and Interactive Browser Game Built with HTML, CSS, and JavaScript
 
@@ -47,21 +47,24 @@ class Ship {
         return this.hull <= 0;
     }
 }
-PlayerShip Class
-Extends Ship and initializes the player with fixed stats, demonstrating inheritance.
+```
 
-javascript
-Copy code
+
+### `PlayerShip` Class
+Extends `Ship` and initializes the player with fixed stats, demonstrating inheritance.
+
+```javascript
 class PlayerShip extends Ship {
     constructor() {
         super(20, 5, 0.7);
     }
 }
-AlienShip Class
-Extends Ship and features randomized stats, showcasing encapsulation and polymorphism.
+```
 
-javascript
-Copy code
+### `AlienShip` Class
+Extends `Ship` and features randomized stats, showcasing encapsulation and polymorphism.
+
+```javascript
 class AlienShip extends Ship {
     constructor() {
         const hull = Math.floor(Math.random() * 4) + 3;
@@ -70,35 +73,42 @@ class AlienShip extends Ship {
         super(hull, firepower, accuracy);
     }
 }
-🚀 Project Highlights
-Interactive Front-End Development: Showcases my ability to create engaging, interactive applications using JavaScript.
-Game Design: Demonstrates understanding of basic game mechanics, randomization, and user engagement.
-Responsive UI: Uses CSS Flexbox for a responsive design, ensuring the game looks great on any device.
-Modular Code: Clean, well-structured, and commented code, making it easy to understand, maintain, and extend.
-📂 How to Run the Game
-Clone the repository:
+```
 
-bash
-Copy code
-git clone https://github.com/your-username/space-battle.git
-Navigate to the project directory:
+## 🚀 Project Highlights
 
-bash
-Copy code
-cd space-battle
-Open index.html in your browser:
+- **Interactive Front-End Development**: Showcases my ability to create engaging, interactive applications using JavaScript.
+- **Game Design**: Demonstrates understanding of basic game mechanics, randomization, and user engagement.
+- **Responsive UI**: Uses CSS Flexbox for a responsive design, ensuring the game looks great on any device.
+- **Modular Code**: Clean, well-structured, and commented code, making it easy to understand, maintain, and extend.
 
-bash
-Copy code
-open index.html
-Click "Start Game" and enjoy!
+## 📂 How to Run the Game
 
-📈 Potential Enhancements
-Improved Visuals: Integrating graphics and animations for a more immersive experience.
-Sound Effects: Adding audio feedback for actions to enhance player engagement.
-Difficulty Levels: Implementing multiple levels of difficulty to challenge players.
-🎯 Why This Project?
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/space-battle.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd space-battle
+    ```
+
+3. Open `index.html` in your browser:
+    ```bash
+    open index.html
+    ```
+
+4. Click "Start Game" and enjoy!
+
+## 📈 Potential Enhancements
+
+- **Improved Visuals**: Integrating graphics and animations for a more immersive experience.
+- **Sound Effects**: Adding audio feedback for actions to enhance player engagement.
+- **Difficulty Levels**: Implementing multiple levels of difficulty to challenge players.
+
+## 🎯 Why This Project?
+
 This project not only demonstrates my technical skills but also my ability to think creatively and deliver a complete, polished product. It serves as an example of how I approach problem-solving, from conceptualization to execution.
 
-💬 Let's Connect!
-I’m passionate about developing user-centric applications and continuously improving my skill set. If you’re looking for someone with a strong foundation in web development and a knack for building engaging user experiences, let’s connect!
+
