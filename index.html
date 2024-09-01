@@ -1,60 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the web page -->
     <title>Space Battle</title>
+    
     <style>
+        /* Styling the body of the page */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
+            font-family: Arial, sans-serif; /* Set the font family */
+            background-color: #000; /* Set background color to black */
+            color: #fff; /* Set text color to white */
+            text-align: center; /* Center align text */
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Arrange items in a column */
+            justify-content: center; /* Center items vertically */
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
         }
+        
+        /* Styling the main heading */
         h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
+            font-size: 3em; /* Set font size for the heading */
+            margin-bottom: 20px; /* Add space below the heading */
         }
+        
+        /* Styling the introductory paragraph */
         p {
-            font-size: 1.2em;
-            margin-bottom: 40px;
+            font-size: 1.2em; /* Set font size for the paragraph */
+            margin-bottom: 40px; /* Add space below the paragraph */
         }
+        
+        /* Styling buttons on the page */
         button {
-            font-size: 1.5em;
-            padding: 10px 20px;
-            color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 5px;
+            font-size: 1.5em; /* Set font size for buttons */
+            padding: 10px 20px; /* Add padding to buttons */
+            color: #fff; /* Set text color to white */
+            background-color: #007bff; /* Set background color for buttons */
+            border: none; /* Remove button border */
+            border-radius: 5px; /* Add border radius for rounded corners */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            margin: 5px; /* Add small margin around buttons */
         }
+        
+        /* Change button color on hover */
         button:hover {
-            background-color: #0056b3;
+            background-color: #0056b3; /* Darker blue on hover */
         }
+        
+        /* Styling the game status display */
         #game-status {
-            margin-top: 20px;
-            font-size: 1.2em;
+            margin-top: 20px; /* Add space above the game status */
+            font-size: 1.2em; /* Set font size for game status */
         }
     </style>
 </head>
 <body>
+    <!-- Main game title -->
     <h1>Space Battle</h1>
+    
+    <!-- Game description -->
     <p>Welcome to the ultimate space battle! Defend Earth against the alien invasion.</p>
+    
+    <!-- Start game button -->
     <button id="start-button">Start Game</button>
 
+    <!-- Game control buttons, initially hidden -->
     <div id="game-controls" style="display:none;">
+        <!-- Attack button -->
         <button id="attack-button">Attack</button>
+        
+        <!-- Retreat button -->
         <button id="retreat-button">Retreat</button>
     </div>
 
+    <!-- Game status output -->
     <div id="game-status"></div>
 
-    <script src="script.js"></script> <!-- Link to your game logic file -->
+    <!-- Link to the external JavaScript file containing game logic -->
+    <script src="script.js"></script>
 </body>
 </html>
